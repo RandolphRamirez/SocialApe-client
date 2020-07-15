@@ -3,12 +3,11 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import PropTypes from 'prop-types';
 import { Grid, Typography, TextField, Button, CircularProgress } from '@material-ui/core';
 import AppIcon from '../images/favicon.ico';
-import Axios from 'axios';
 import { Link } from 'react-router-dom';
 
 // Redux
 import { connect } from 'react-redux';
-import { signupUser, logoutUser } from '../redux/actions/userActions';
+import { signupUser } from '../redux/actions/userActions';
 
 const styles = (theme) => ({
     ...theme.spreadThis

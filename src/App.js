@@ -13,12 +13,13 @@ import {SET_AUTHENTICATED} from './redux/types';
 import {logoutUser, getUserData} from './redux/actions/userActions';
 
 // Components
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 
 // Pages
 import home from './pages/home';
 import login from './pages/login';
 import signup from './pages/signup';
+import user from './pages/user';
 import themeFile from './util/theme';
 import JwtDecode from 'jwt-decode';
 import Axios from 'axios';
@@ -51,6 +52,8 @@ class App extends Component {
                 <Route exact path="/" component={home}/>
                 <AuthRoute exact path="/login" component={login}/>
                 <AuthRoute exact path="/signup" component={signup}/>
+                <Route exact path="/user/:handle" component={user}/>
+                <Route exact path="/user/:handle/scream/:screamId" component={user}/>
               </Switch>
             </div>
           </Router>
