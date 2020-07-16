@@ -60,7 +60,7 @@ class Profile extends Component {
                     </div>
                     <hr/>
                     <div className="profile-details">
-                        <MuiLink component={Link} to={`/users/${handle}`} color="primary" variant="h5">
+                        <MuiLink component={Link} to={`/user/${handle}`} color="primary" variant="h5">
                             @{handle}
                         </MuiLink>
                         <hr/>
@@ -77,7 +77,7 @@ class Profile extends Component {
                         {
                             website && (
                                 <Fragment>
-                                    <LinkIcon color="primary"/> <a href={website} target="_blank" rel="noopener noreferer">
+                                    <LinkIcon color="primary"/> <a href={website} target="_blank" rel="noopener noreferrer">
                                         {' '}{website}
                                     </a>
                                     <hr/>

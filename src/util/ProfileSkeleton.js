@@ -10,7 +10,6 @@ import Paper from '@material-ui/core/Paper';
 import LocationOn from '@material-ui/icons/LocationOn';
 import LinkIcon from '@material-ui/icons/Link';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
-import theme from './theme';
 
 const styles = theme => ({
     ...theme.spreadThis,
