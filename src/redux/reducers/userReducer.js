@@ -24,7 +24,8 @@ export default function(state = initialState, action) {
             };
         case LOADING_USER:
             return {
-                ...state
+                ...state,
+                loading: true
             }
         case LIKE_SCREAM:
             return {
